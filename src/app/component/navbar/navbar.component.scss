@@ -1,21 +1,36 @@
 .navbar {
-    background-color: #841617;
-    padding: 10px 20px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 60px;
-  }
-  
-  .navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-  }
+  background-color: #841617;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 50px;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.navbar-brand a:first-child {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-logo-link {
+  position: absolute;
+  right: 20px;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust size as needed */
+}
   
   .hamburger {
     font-size: 24px;

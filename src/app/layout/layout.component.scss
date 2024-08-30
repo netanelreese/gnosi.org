@@ -15,14 +15,11 @@
     flex: 1;
   }
   
-  app-sidebar {
-    width: 250px;
-    background-color: #f4f4f4;
-    border-right: 1px solid #ccc;
-  }
-  
   .main-content {
     flex: 1;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
   }
   

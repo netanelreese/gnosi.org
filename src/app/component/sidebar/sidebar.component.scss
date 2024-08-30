@@ -1,17 +1,16 @@
-/* sidebar.component.scss */
-
-div {
+.sidebar {
   background-color: #f4f4f4;
   color: #333;
   width: 250px;
   height: 100vh;
   padding: 20px;
   position: fixed; /* Fix the sidebar in place */
-  left: -250px; /* Initially hide the sidebar off-screen */
-  transition: left 0.3s ease-in-out;
+  left: -400px; /* Initially hide the sidebar off-screen */
+  top: 0;
+  transition: left 0.4s ease-in-out; /* Smooth transition */
 }
 
-div.open {
+.sidebar.open {
   left: 0; /* When .open is applied, the sidebar slides into view */
 }
 
@@ -31,19 +30,20 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #f35d5d; /* Change color on hover */
 }
 
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
   border: none;
+  font-size: 24px;
   cursor: pointer;
-  font-size: 16px;
+  color: #333;
 }
 
-button:hover {
-  background-color: #0056b3;
+.close-btn:hover {
+  color: #ff0000; /* Change color when hovering over the close button */
 }
