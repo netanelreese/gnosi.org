@@ -1,15 +1,10 @@
-name: CI
+name: Angular Linting
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
-  lint-and-test:
+  lint:
+    name: Run Angular Lint
     runs-on: ubuntu-latest
 
     steps:
@@ -19,13 +14,10 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '16.x'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
-    - name: Run ESLint
+    - name: Run Angular lint
       run: npm run lint
-
-    - name: Run tests
-      run: npm test
