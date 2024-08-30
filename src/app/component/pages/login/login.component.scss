@@ -1,0 +1,83 @@
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #841617;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Corrected border property */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input.is-invalid {
+    border-color: #dc3545;
+  }
+  
+  .invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 5px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333; /* Dark grey button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #555555; /* Slightly lighter grey on hover */
+  }
+  
+  .btn.shake {
+    animation: shake 0.5s; /* Apply shake animation */
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .error-message {
+    color: #ffffff; /* White text for better contrast */
+    background-color: #dc3545; /* Red background */
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  

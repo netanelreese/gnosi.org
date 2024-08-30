@@ -1,0 +1,22 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    background-color: #1c1c1c;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  

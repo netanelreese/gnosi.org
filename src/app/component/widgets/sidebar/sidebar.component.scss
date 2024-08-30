@@ -1,0 +1,66 @@
+.sidebar {
+  background-color: #2b2b2b;
+  color: #333;
+  border: 2px solid #a6a6a6; /* Slightly lighter border */
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed; /* Fix the sidebar in place */
+  left: -400px; /* Initially hide the sidebar off-screen */
+  top: 0;
+  transition: left 0.4s ease-in-out; /* Smooth transition */
+  border-top-right-radius: 15px; /* Rounded top right corner */
+  border-bottom-right-radius: 15px; /* Rounded bottom right corner */
+  z-index: 1100; /* Higher z-index to ensure it appears on top of the navbar */
+}
+
+.sidebar.open {
+  left: 0; /* When .open is applied, the sidebar slides into view */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 20px; /* Add some space at the top */
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 0; /* Adjust padding for better click area */
+  display: block; /* Make the link block-level to take up the full width */
+  transition: background-color 0.3s, color 0.3s, padding 0.3s; /* Smooth transition */
+}
+
+ul li a:hover {
+  color: #f35d5d; /* Change color on hover */
+  background-color: #333; /* Slightly lighter background on hover */
+  border: 2px solid #3a3a3a; /* Border only on hover */
+  border-radius: 10px; /* Rounded rectangle effect on hover */
+  padding: 10px 15px; /* Add padding on hover to create space inside the border */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent; /* Transparent background initially */
+  border: 2px solid transparent; /* Transparent border initially */
+  border-radius: 8px; /* Rounded square effect */
+  font-size: 24px;
+  cursor: pointer;
+  color: #cccccc;
+  padding: 5px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.close-btn:hover {
+  background-color: #ff0000; /* Red background on hover */
+  border: 2px solid #ff0000; /* Red border on hover */
+  color: #ffffff; /* White X when hovering */
+}

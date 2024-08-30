@@ -1,0 +1,20 @@
+<div class="services">
+    <h1>Hosted Services</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let service of services">
+          <td>{{ service.name }}</td>
+          <td>{{ service.description }}</td>
+          <td><a [href]="service.link" target="_blank">Go to {{ service.name }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
