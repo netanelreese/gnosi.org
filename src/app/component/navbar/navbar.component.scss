@@ -3,7 +3,7 @@
   padding: 10px 20px;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Ensure space between hamburger and brand/logo */
   align-items: center;
   position: relative;
   min-height: 50px;
@@ -13,32 +13,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   position: relative;
 }
 
 .navbar-brand a:first-child {
   font-weight: bold;
   color: white;
-  text-decoration: none;
+  text-decoration: none;;
 }
 
 .navbar-logo-link {
-  position: absolute;
-  right: 20px;
+  margin-left: 10px; /* Add some space between text and logo if needed */
 }
 
 .navbar-logo {
-  height: 40px; /* Adjust size as needed */
+  height: 40px;
 }
-  
-  .hamburger {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    left: 20px;
-  }
-  
+
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
