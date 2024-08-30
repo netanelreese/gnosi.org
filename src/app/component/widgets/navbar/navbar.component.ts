@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { SidebarService } from '../services/sidebar.service'; // Adjust the path if needed
+import { SidebarService } from '../../../services/sidebar.service'; // Adjust the path if needed
 
 @Component({
   selector: 'app-navbar',

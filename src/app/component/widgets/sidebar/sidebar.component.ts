@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarService } from '../services/sidebar.service'; // Adjust the path as needed
+import { SidebarService } from '../../../services/sidebar.service'; // Adjust the path as needed
 
 @Component({
   selector: 'app-sidebar',
