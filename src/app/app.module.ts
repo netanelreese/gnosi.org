@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { ContentComponent } from './content/content.component';
-import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
+import { ContentComponent } from './component/content/content.component';
+import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +14,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     SidebarComponent,
     ContentComponent,
-    LoginComponent,
+    LayoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

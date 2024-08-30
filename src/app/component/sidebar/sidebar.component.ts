@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SidebarService } from '../services/sidebar.service'; // Adjust the path as needed
 
 @Component({
   selector: 'app-sidebar',
@@ -6,9 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-  isOpen = false;
+
+  constructor(public sidebarService: SidebarService) {}
 
   toggleSidebar() {
-    this.isOpen = !this.isOpen;
+    this.sidebarService.toggleSidebar();
   }
 }

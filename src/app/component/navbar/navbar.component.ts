@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from '../sidebar/sidebar.component';
+import { SidebarService } from '../services/sidebar.service'; // Adjust the path if needed
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,10 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  constructor(private sidebar: SidebarComponent) {}
+
+  constructor(private sidebarService: SidebarService) {}
 
   toggleSidebar() {
-    this.sidebar.toggleSidebar();
+    this.sidebarService.toggleSidebar();
   }
 }
