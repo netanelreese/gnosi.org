@@ -13,6 +13,8 @@ import { BlogComponent } from './component/pages/blog/blog.component'; // Import
 import { FooterComponent } from './component/widgets/footer/footer.component';
 import { ServicesComponent } from './component/pages/service-page/service-page.component';
 import { AboutComponent } from './component/pages/about/about.component';
+import { LoginComponent } from './component/pages/login/login.component';
+import { BlogService } from './services/blog.service'; // Import BlogService
 
 @NgModule({
   declarations: [
@@ -24,10 +26,13 @@ import { AboutComponent } from './component/pages/about/about.component';
     HomeComponent,
     FooterComponent,
     ServicesComponent,
-    AboutComponent
+    AboutComponent,
+    BlogComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
