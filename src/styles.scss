@@ -1,71 +1,86 @@
 body {
-    font-family: Consolas, monospace;
-    margin: 0;
-    padding: 0;
-    background-color: #1c1c1c; /* Dark background */
-    color: #e0e0e0; /* Light gray text for better readability */
-  }
-  
-  a {
-    color: #f35d5d; /* Softer red for links */
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .navbar {
-    background-color: #841617; /* Keeping the same navbar background color */
+font-family: Consolas, monospace;
+margin: 0;
+padding: 0;
+background-color: #1c1c1c; /* Dark background */
+color: #e0e0e0; /* Light gray text for better readability */
+}
+
+a {
+color: #f35d5d; /* Softer red for links */
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.navbar {
+    background-color: #841617;
     padding: 10px 20px;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    min-height: 50px;
   }
   
-  .navbar a {
-    color: white; /* Keeping navbar links white */
-  }
-  
-  .navbar-brand a {
-    font-weight: bold; /* Makes the navbar brand bold */
-    color: white;
-  }
-  
-  .main-container {
+  .navbar-brand {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
   }
   
-  .sidebar {
-    width: 200px;
-    background-color: #2b2b2b; /* Dark sidebar background */
-    padding: 20px;
-    border-right: 1px solid #3a3a3a; /* Slightly lighter border */
+  .navbar-brand a:first-child {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
   }
   
-  .sidebar ul li a {
-    color: #e0e0e0; /* Sidebar links in light gray */
+  .navbar-logo-link {
+    position: absolute;
+    right: 20px; /* Keep the logo on the far right */
   }
   
-  .sidebar ul li a:hover {
-    color: #f35d5d; /* Hover effect for sidebar links */
+  .navbar-logo {
+    height: 40px; /* Adjust size as needed */
   }
-  
-  .content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #1e1e1e; /* Dark content background */
-  }
-  
-  h1 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #f2f2f2; /* Light color for headers */
-  }
-  
-  p {
-    font-size: 16px;
-    color: #d3d3d3; /* Slightly lighter text color for paragraphs */
-  }
-  
+
+.main-container {
+display: flex;
+}
+
+.sidebar {
+width: 200px;
+background-color: #2b2b2b; /* Dark sidebar background */
+padding: 20px;
+border-right: 1px solid #3a3a3a; /* Slightly lighter border */
+}
+
+.sidebar ul li a {
+color: #e0e0e0; /* Sidebar links in light gray */
+}
+
+.sidebar ul li a:hover {
+color: #f35d5d; /* Hover effect for sidebar links */
+}
+
+.content {
+flex-grow: 1;
+padding: 20px;
+background-color: #1e1e1e; /* Dark content background */
+}
+
+h1 {
+font-size: 24px;
+font-weight: 600;
+color: #f2f2f2; /* Light color for headers */
+}
+
+p {
+font-size: 16px;
+color: #d3d3d3; /* Slightly lighter text color for paragraphs */
+}
