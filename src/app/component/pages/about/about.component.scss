@@ -1,0 +1,39 @@
+.about {
+    padding: 20px;
+  
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #933334;
+    }
+  
+    section {
+      margin-bottom: 30px;
+  
+      h2 {
+        font-size: 2rem;
+        color: #933334;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+  
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+  
+        li {
+          margin-bottom: 10px;
+          font-size: 1.2rem;
+  
+          strong {
+            color: #933334;
+          }
+        }
+      }
+    }
+  }
+  

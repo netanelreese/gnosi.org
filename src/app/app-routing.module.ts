@@ -4,6 +4,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './component/pages/home/home.component';
 import { BlogComponent } from './component/pages/blog/blog.component';  // Import BlogComponent
 import { ServicesComponent } from './component/pages/service-page/service-page.component'; // Import ServicesComponent
+import { AboutComponent } from './component/pages/about/about.component'; // Import AboutComponent
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },  // Homepage route
       { path: 'blog', component: BlogComponent }, // Add Blog route
       { path: 'services', component: ServicesComponent }, // Add Services route
+      { path: 'about', component: AboutComponent }, // Add About route
       // Add routes for Blog, Services, Login Page here
     ]
   },
