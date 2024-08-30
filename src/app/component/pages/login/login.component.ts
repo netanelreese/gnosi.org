@@ -18,8 +18,22 @@ export class LoginComponent {
     private router: Router
   ) {
     this.loginForm = this.formBuilder.group({
-      username: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]],
+      username: [
+        '', 
+        [
+          Validators.required,
+          Validators.minLength(3), // Minimum length of 3 characters
+          Validators.pattern('^[a-zA-Z0-9_]+$') // Only allow letters, numbers, and underscores
+        ]
+      ],
+      password: [
+        '', 
+        [
+          Validators.required,
+          Validators.minLength(8), // Minimum length of 8 characters
+          Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})') // At least one lowercase, one uppercase, one number, one special character
+        ]
+      ],
     });
   }
 
@@ -41,7 +55,7 @@ export class LoginComponent {
 
     // Simulate a login request (replace with actual authentication logic)
     setTimeout(() => {
-      if (this.f['username'].value === 'admin' && this.f['password'].value === 'password') {
+      if (this.f['username'].value === 'admin' && this.f['password'].value === 'Password123!') {
         this.router.navigate(['/']); // Navigate to home on successful login
       } else {
         this.error = 'Invalid username or password';
