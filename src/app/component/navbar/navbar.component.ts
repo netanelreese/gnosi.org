@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { SidebarService } from '../services/sidebar.service'; // Adjust the path if needed
 
 @Component({
@@ -9,6 +9,24 @@ import { SidebarService } from '../services/sidebar.service'; // Adjust the path
 export class NavbarComponent {
 
   constructor(private sidebarService: SidebarService) {}
+
+  isVisible = true;
+  lastScrollPosition = 0;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const currentScrollPosition = window.pageYOffset;
+
+    if (currentScrollPosition > this.lastScrollPosition) {
+      // Scrolling down
+      this.isVisible = false;
+    } else {
+      // Scrolling up
+      this.isVisible = true;
+    }
+
+    this.lastScrollPosition = currentScrollPosition;
+  }
 
   toggleSidebar() {
     this.sidebarService.toggleSidebar();

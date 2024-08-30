@@ -1,4 +1,4 @@
-<div class="navbar">
+<div class="navbar" [class.hidden]="!isVisible">
   <button class="hamburger" (click)="toggleSidebar()">&#9776;</button>
   <div class="navbar-brand">
     <a href="/">GNOSI</a>

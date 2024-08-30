@@ -11,6 +11,7 @@
   transition: left 0.4s ease-in-out; /* Smooth transition */
   border-top-right-radius: 15px; /* Rounded top right corner */
   border-bottom-right-radius: 15px; /* Rounded bottom right corner */
+  z-index: 1100; /* Higher z-index to ensure it appears on top of the navbar */
 }
 
 .sidebar.open {
