@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Consolas, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #24292e;
+    color: #FFFFFF;
+  }
+  
+  a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar {
+    background-color: #841617;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  .navbar-brand a {
+    font-weight: bold; /* Makes the navbar brand bold */
+    color: white;
+  }
+
+  .main-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e1e4e8;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+  }
