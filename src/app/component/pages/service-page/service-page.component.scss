@@ -1,0 +1,45 @@
+.services {
+    padding: 20px;
+  
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  
+      th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #530e0e;
+        color: white;
+      }
+  
+      td {
+        background-color: #383838;
+      }
+  
+      a {
+        color: #c6c6c6;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s, padding 0.3s; /* Smooth transition */
+  
+        &:hover {
+            color: #f35d5d; /* Change color on hover */
+            background-color: #1c1c1c; /* Slightly lighter background on hover */
+            border: 2px solid #c6c6c6; /* Border only on hover */
+            border-radius: 10px; /* Rounded rectangle effect on hover */
+            padding: 5px 5px; /* Add padding on hover to create space inside the border */
+        }
+      }
+    }
+  }
+  
