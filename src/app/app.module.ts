@@ -7,6 +7,7 @@ import { SidebarComponent } from './component/widgets/sidebar/sidebar.component'
 import { ContentComponent } from './component/widgets/content/content.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './component/pages/home/home.component';
+import { BlogComponent } from './component/pages/blog/blog.component'; // Import BlogComponent
 
 @NgModule({
   declarations: [
