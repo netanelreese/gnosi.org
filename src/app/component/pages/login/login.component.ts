@@ -18,7 +18,7 @@ export class LoginComponent {
     private router: Router
   ) {
     this.loginForm = this.formBuilder.group({
-      username: ['', [Validators.required]],
+      username: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
@@ -28,11 +28,12 @@ export class LoginComponent {
     return this.loginForm.controls;
   }
 
-  onSubmit() {
+  onSubmit(): void {
     this.submitted = true;
 
     // Stop if the form is invalid
     if (this.loginForm.invalid) {
+      this.loading = false;
       return;
     }
 
@@ -44,6 +45,16 @@ export class LoginComponent {
         this.router.navigate(['/']); // Navigate to home on successful login
       } else {
         this.error = 'Invalid username or password';
+
+        // Trigger the shake effect
+        const button = document.querySelector('.btn') as HTMLElement;
+        button.classList.add('shake');
+
+        // Remove the shake class after the animation completes
+        setTimeout(() => {
+          button.classList.remove('shake');
+        }, 500);
+
         this.loading = false;
       }
     }, 1000);
