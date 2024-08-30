@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #841617;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 60px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+  }
+  

@@ -1,0 +1,30 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); /* Hide sidebar initially */
+    z-index: 1000; /* Make sure the sidebar is on top */
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Show sidebar */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+  }
+  
+  .sidebar ul ul {
+    padding-left: 20px;
+  }
+  
